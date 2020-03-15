@@ -322,7 +322,6 @@ open class BarChartRenderer: BarLineScatterCandleBubbleRenderer
             
             if drawBorder
             {
-                context.saveGState()
                 context.setStrokeColor(borderColor.cgColor)
                 context.setLineWidth(borderWidth)
                 context.stroke(barRect)
